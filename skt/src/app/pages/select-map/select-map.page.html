@@ -1,6 +1,15 @@
-<ion-content class="cont_main">
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title> Banda DJavú </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="cont_main" [fullscreen]="true" [style.--background]="scanActive?'#00000000':'#ffffff'">
   <div>
     <ion-button routerLink="/home">Ir ao Mapa</ion-button>  
     <ion-button id="FileLocal" (click)="takePicture()">Ler QR Code</ion-button>
+    <ion-button expand="full" (click)="startScanner()" [hidden]="scanActive">SCAN</ion-button>
   </div>
 </ion-content>

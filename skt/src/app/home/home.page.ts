@@ -32,7 +32,7 @@ export class HomePage{
     }
   ];
 
-  public image_path =  '' 
+  public image_path = ''
   
   constructor() {}
 
